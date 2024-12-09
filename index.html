@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة المنتجات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>قائمة المنتجات والأسعار</h1>
+            <p>عرض تفصيلي للمنتجات والكميات والأسعار</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" placeholder="ابحث عن منتج..." class="search-input" id="searchInput">
+        </div>
+
+        <div class="category-filters">
+            <button class="category-btn active" data-category="all">الكل</button>
+            <button class="category-btn" data-category="food">المواد الغذائية</button>
+            <button class="category-btn" data-category="vegetables">الخضروات</button>
+            <button class="category-btn" data-category="fruits">الفواكه</button>
+            <button class="category-btn" data-category="meat">اللحوم</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+            <!-- سيتم إضافة البطاقات ديناميكياً عبر JavaScript -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
